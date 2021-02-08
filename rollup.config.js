@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
+import es3 from 'rollup-plugin-es3'
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -40,7 +41,7 @@ export default {
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
-				dev: !production
+				dev: !production,
 			}
 		}),
 		// we'll extract any component CSS out into
@@ -59,6 +60,7 @@ export default {
 		commonjs({ 
 			requireReturnsDefault: 'auto', 
 		}),
+		es3(),
 
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated

@@ -25,9 +25,8 @@ var slice = [].slice;
  * @return {Object}
  */
 function Events(obj, name) {
-    console.log("init ", name)
-    if (!(this instanceof Events)) {console.log(name, "type event"); return new Events(obj, name); }
-    if (obj) { console.log(name, "type obj"); return mixin(obj, proto);}
+    if (!(this instanceof Events)) { return new Events(obj, name); }
+    if (obj) { return mixin(obj, proto);}
 }
 
 /**

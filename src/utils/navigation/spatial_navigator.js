@@ -230,7 +230,7 @@ SpatialNavigator.prototype = evtemt({
         if (this.navigableFilter && !this.navigableFilter(elem)) {
             return false;
         }
-        return true;
+        return elem != null;
     },
 
     /**
@@ -507,7 +507,6 @@ SpatialNavigator.prototype = evtemt({
         this.unfocus();
         this._collection = [];
         if (collection) {
-          console.log({ collection })
             this.multiAdd(collection);
         }
     },

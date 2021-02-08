@@ -1,10 +1,16 @@
 <script>
     import Focusable from '../HOC/Focusable.svelte'
+    import {  createEventDispatcher } from "svelte";
+    const dispatchEvent = createEventDispatcher();
 
-    export let assetId, image, description, title, subtitle, onEnter, id
+    export let assetId, image, description, title, subtitle, id
+
+    function onEnter(ev) {
+      dispatchEvent("enter", ev)
+    }
 </script>
 
-<Focusable onEnter={onEnter} id={id}>
+<Focusable on:enter={onEnter} id={id}>
     <div class="card" >
         <img src={ image } alt="Avatar" style="width:100%">
         <div class="container">

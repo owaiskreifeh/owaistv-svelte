@@ -1,7 +1,7 @@
 export const mediaJSON = {
     categories: [
         {
-            name: "Movies",
+            name: "Shorts",
             videos: [
                 {
                     description:
@@ -10,7 +10,8 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
                     ],
                     subtitle: "By Blender Foundation",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
                     title: "Big Buck Bunny",
                 },
                 {
@@ -19,7 +20,8 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
                     ],
                     subtitle: "By Blender Foundation",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
                     title: "Elephant Dream",
                 },
                 {
@@ -29,7 +31,8 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
                     ],
                     subtitle: "By Google",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg",
                     title: "For Bigger Blazes",
                 },
                 {
@@ -39,7 +42,8 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
                     ],
                     subtitle: "By Google",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerEscapes.jpg",
                     title: "For Bigger Escape",
                 },
                 {
@@ -49,29 +53,16 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
                     ],
                     subtitle: "By Google",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerFun.jpg",
                     title: "For Bigger Fun",
                 },
-                {
-                    description:
-                        "Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for the times that call for bigger joyrides. For $35. Learn how to use Chromecast with YouTube and more at google.com/chromecast.",
-                    sources: [
-                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-                    ],
-                    subtitle: "By Google",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
-                    title: "For Bigger Joyrides",
-                },
-                {
-                    description:
-                        "Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for when you want to make Buster's big meltdowns even bigger. For $35. Learn how to use Chromecast with Netflix and more at google.com/chromecast.",
-                    sources: [
-                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
-                    ],
-                    subtitle: "By Google",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg",
-                    title: "For Bigger Meltdowns",
-                },
+            ],
+        },
+
+        {
+            name: "Series",
+            videos: [
                 {
                     description:
                         "Sintel is an independently produced short film, initiated by the Blender Foundation as a means to further improve and validate the free/open source 3D creation suite Blender. With initial funding provided by 1000s of donations via the internet community, it has again proven to be a viable development model for both open 3D technology as for independent animation film.\nThis 15 minute film has been realized in the studio of the Amsterdam Blender Institute, by an international team of artists and developers. In addition to that, several crucial technical and creative targets have been realized online, by developers and artists and teams all over the world.\nwww.sintel.org",
@@ -79,7 +70,8 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
                     ],
                     subtitle: "By Blender Foundation",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg",
                     title: "Sintel",
                 },
                 {
@@ -89,7 +81,8 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
                     ],
                     subtitle: "By Garage419",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg",
                     title: "Subaru Outback On Street And Dirt",
                 },
                 {
@@ -99,7 +92,8 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
                     ],
                     subtitle: "By Blender Foundation",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
                     title: "Tears of Steel",
                 },
                 {
@@ -109,9 +103,39 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
                     ],
                     subtitle: "By Garage419",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg",
                     title: "Volkswagen GTI Review",
                 },
+            ],
+        },
+
+        {
+            name: "Movies",
+            videos: [
+                {
+                    description:
+                        "Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for the times that call for bigger joyrides. For $35. Learn how to use Chromecast with YouTube and more at google.com/chromecast.",
+                    sources: [
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+                    ],
+                    subtitle: "By Google",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerJoyrides.jpg",
+                    title: "For Bigger Joyrides",
+                },
+                {
+                    description:
+                        "Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for when you want to make Buster's big meltdowns even bigger. For $35. Learn how to use Chromecast with Netflix and more at google.com/chromecast.",
+                    sources: [
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+                    ],
+                    subtitle: "By Google",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerMeltdowns.jpg",
+                    title: "For Bigger Meltdowns",
+                },
+
                 {
                     description:
                         "The Smoking Tire is going on the 2010 Bullrun Live Rally in a 2011 Shelby GT500, and posting a video from the road every single day! The only place to watch them is by subscribing to The Smoking Tire or watching at BlackMagicShine.com",
@@ -119,7 +143,8 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
                     ],
                     subtitle: "By Garage419",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg",
                     title: "We Are Going On Bullrun",
                 },
                 {
@@ -129,15 +154,14 @@ export const mediaJSON = {
                         "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
                     ],
                     subtitle: "By Garage419",
-                    thumb: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/WhatCarCanYouGetForAGrand.jpg",
+                    thumb:
+                        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/WhatCarCanYouGetForAGrand.jpg",
                     title: "What care can you get for a grand?",
                 },
             ],
         },
     ],
 };
-
-
 
 export async function fetchAssets() {
     return mediaJSON;
