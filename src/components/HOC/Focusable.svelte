@@ -1,9 +1,15 @@
-<script>
-    import { afterUpdate, getContext, createEventDispatcher, onMount } from "svelte";
-    import { CTX_KEY_NAV } from "../../utils/ctx_keys";
+<svelte:options accessors />
 
-    export let onEnter,
-        className = "",
+<script>
+    import {
+        afterUpdate,
+        getContext,
+        createEventDispatcher,
+        onMount,
+    } from "svelte";
+    import { CTX_KEY_NAV } from "../../utils/ctx_keys";
+    import { KeyEvent } from "../../utils/navigation/KeyEvent";
+    export let className = "",
         style = "",
         ref = null,
         id = null,
@@ -16,14 +22,21 @@
     const { spatialNavigator, currentFocused } = getContext(CTX_KEY_NAV);
 
     function onClick(ev) {
-        dispatchEvent("enter", ev)
+        dispatchEvent("enter", ev);
         ev.preventDefault();
+    }
+
+    function onKeyDown(ev) {
+        if (ev.keyCode == KeyEvent.DOM_VK_RETURN) {
+            dispatchEvent("enter", ev);
+            ev.preventDefault();
+        }
     }
 
     const updateFocusState = () => {
         if (innerRef && $currentFocused == innerRef) {
             focused = true;
-            dispatchEvent("focus", $currentFocused)
+            dispatchEvent("focus", $currentFocused);
             if (type == "area") {
                 spatialNavigator.remove($currentFocused);
                 spatialNavigator.focus(
@@ -36,7 +49,10 @@
         } else {
             focused = false;
             if (type == "area") {
-                if ($currentFocused && $currentFocused.parentElement !== innerRef) {
+                if (
+                    $currentFocused &&
+                    $currentFocused.parentElement !== innerRef
+                ) {
                     spatialNavigator.add(innerRef);
                 } else {
                     lastFocusedChild = $currentFocused;
@@ -51,18 +67,20 @@
         updateFocusState();
     });
 
-    onMount(()=>{
+    onMount(() => {
         ref = innerRef;
-    })
+    });
 </script>
-<svelte:options accessors/>
+
 <a
     class={` ${className} focusable${focused ? " focused" : ""}`}
-    style={style}
+    {style}
     on:click={onClick}
+    on:keydown={onKeyDown}
     href
     {id}
     bind:this={innerRef}
+    {...$$restProps}
 >
     <slot />
 </a>

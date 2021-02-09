@@ -4,6 +4,7 @@ html, body {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	background-color: #333;
 }
 
 body {
@@ -57,4 +58,8 @@ video {
 
 .focusable.focused{
 	outline: 5px solid teal
+}
+
+a, p, h1,h2,h3,h4,h5,h6,span{
+	color: aliceblue;
 }

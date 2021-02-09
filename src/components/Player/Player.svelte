@@ -76,31 +76,31 @@
         bind:this={playerControls}
     >
         <Focusable type="area">
-            <Focusable className="btn-player-controller" onEnter={play}>
+            <Focusable className="btn-player-controller" on:enter={play}>
                 PLAY
             </Focusable>
-            <Focusable className="btn-player-controller" onEnter={pause}>
+            <Focusable className="btn-player-controller" on:enter={pause}>
                 PAUSE
             </Focusable>
-            <Focusable className="btn-player-controller" onEnter={pop}>Back</Focusable>
+            <Focusable className="btn-player-controller" on:enter={pop}>Back</Focusable>
         </Focusable>
         <Focusable type="area" focusLast={false}>
-            <Focusable className="btn-player-controller" onEnter={play}>
+            <Focusable className="btn-player-controller" on:enter={play}>
                 PLAY
             </Focusable>
-            <Focusable className="btn-player-controller" onEnter={pause}>
+            <Focusable className="btn-player-controller" on:enter={pause}>
                 PAUSE
             </Focusable>
-            <Focusable className="btn-player-controller" onEnter={pop}>Back</Focusable>
+            <Focusable className="btn-player-controller" on:enter={pop}>Back</Focusable>
         </Focusable>
         <Focusable type="area" >
-            <Focusable className="btn-player-controller" onEnter={play}>
+            <Focusable className="btn-player-controller" on:enter={play}>
                 PLAY
             </Focusable>
-            <Focusable className="btn-player-controller" onEnter={pause}>
+            <Focusable className="btn-player-controller" on:enter={pause}>
                 PAUSE
             </Focusable>
-            <Focusable className="btn-player-controller" onEnter={pop}>Back</Focusable>
+            <Focusable className="btn-player-controller" on:enter={pop}>Back</Focusable>
         </Focusable>
     </div>
 </div>
